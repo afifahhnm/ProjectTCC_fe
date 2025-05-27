@@ -204,10 +204,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const logoutBtn = document.createElement("button");
   logoutBtn.textContent = "Logout";
   logoutBtn.style.position = "fixed";
-  logoutBtn.style.top = "24px";
-  logoutBtn.style.right = "32px";
-  logoutBtn.style.padding = "10px 18px";
-  logoutBtn.style.backgroundColor = "#e23636";
+  logoutBtn.style.bottom = "24px";
+  logoutBtn.style.left = "32px";
+  logoutBtn.style.padding = "10px 80px";
+  logoutBtn.style.backgroundColor = "#764ba2";
   logoutBtn.style.color = "#fff";
   logoutBtn.style.border = "none";
   logoutBtn.style.borderRadius = "8px";
@@ -215,8 +215,8 @@ window.addEventListener("DOMContentLoaded", () => {
   logoutBtn.style.fontSize = "16px";
   logoutBtn.style.cursor = "pointer";
   logoutBtn.style.zIndex = "1000";
-  logoutBtn.onmouseover = () => logoutBtn.style.backgroundColor = "#c01c1c";
-  logoutBtn.onmouseout = () => logoutBtn.style.backgroundColor = "#e23636";
+  logoutBtn.onmouseover = () => logoutBtn.style.backgroundColor = "#a45eea";
+  logoutBtn.onmouseout = () => logoutBtn.style.backgroundColor = "#764ba2";
   logoutBtn.onclick = function () {
     if (confirm("Yakin ingin logout?")) {
       localStorage.removeItem('token');
